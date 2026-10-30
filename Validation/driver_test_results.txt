@@ -1,0 +1,40 @@
+UTC: 2026-10-23T00:48:14.036297+00:00
+SOURCE SHA256:
+f4b923a181d4f226388942a7719e6c955bb12c9a3d52f0220ac8972bf1d48e1f  L1_Drivers/OLED.c
+32c5603dc5e79c3bc2926e63d3df82a7e211f9103ed8d03b24126ba41d4d6eda  L1_Drivers/LED.c
+d523e76eb9736e8ed5f4e3db62c9e4091f41ce155eaa0e87e1d717cc1f7c9578  L1_Drivers/Key.c
+d060eaee6ba84463c1f5008a5c5e9673226225f7f00f1b2ca472caec4083c485  L1_Drivers/Delay.c
+0a36db822088c33eaaa0e3b10d1f7a39bc9a53b0165b388817b671f162edb871  Validation/test_drivers.c
+70908eaced58123f739c630c957be515f59feedcb53bd2cbc48f79777cc8fc1a  L1_Drivers/OLED.h
+435aa758457fe93a58a3f1c49be31e8117a2b119dccc61ff66507b6c570f6cc2  L1_Drivers/LED.h
+bf33790a22752fe466ea18ac7ac4d0ef2ff3f6018cab8a5eaeadd4aa28330ac6  L1_Drivers/Key.h
+a8230b8312ce138f3c4072b0f3eda39f5678c1c0185391cd501fec7c58ae1e49  L1_Drivers/Delay.h
+eb0b76b2dd439421b628908f1f368389ab15951462d9add89f450b934ece38a0  L1_Drivers/OLED_Font.h
+dd62e2b7c300eae0379b571431e017caddc115b1186b1c51b0040c5f62754fa0  Hardware/board.h
+3c4d58b95139f95699e727fcc9dff335884c1637feb8094bb28be92a6e42241c  Hardware/OLED.c
+cca3e7189492dd2cf407b230dcfd3e49ab8029f0a79692c576836e3fc2283986  Hardware/LED.c
+5ababa0910539ae42580e66b5cecce7d5f6cc8754abe1babc9e1c739648db55e  Hardware/Key.c
+3b8125ad59658666e0c4c8e92afba85ce19903fd57a81c9a1143ca33996ad43f  Hardware/Delay.c
+1729f2aecf9945b3c62944d98a409c9a34aef6ed546c7e0282bb66a1b880846c  User/driver_assembly.c
+5ec3654a64f1e028104db5acefd1baa605e5db78712d2e26d3a3807c2b53c80e  User/driver_assembly.h
+40c4f8f4a5f4ae78feff604156a580cc677e619611c3bb1e58b963d9e24e2c2f  User/main.c
+18565994b8effa661816e50144eeb8f2e11989ab897e1332561544101d81f731  Project.uvprojx
+552794b56ab2f3b5335e2b5d678adac45f449bf303cef1d796d99513f5210c06  Validation/run_driver_tests.py
+BUILD: Validation\toolchain\ziglang\zig.exe cc -std=c99 -Wall -Wextra -Werror -Wno-missing-braces -pedantic -O0 -IL1_Drivers L1_Drivers/OLED.c L1_Drivers/LED.c L1_Drivers/Key.c L1_Drivers/Delay.c Validation/test_drivers.c -o C:\Users\RD68\Desktop\FOC-103\Validation\driver_tests.exe
+
+
+BUILD PASS: -O0
+PASS: 1798 checks; OLED stream, key debounce/priority, LED latch, delay units
+
+
+BUILD: Validation\toolchain\ziglang\zig.exe cc -std=c99 -Wall -Wextra -Werror -Wno-missing-braces -pedantic -O2 -IL1_Drivers L1_Drivers/OLED.c L1_Drivers/LED.c L1_Drivers/Key.c L1_Drivers/Delay.c Validation/test_drivers.c -o C:\Users\RD68\Desktop\FOC-103\Validation\driver_tests.exe
+
+
+BUILD PASS: -O2
+PASS: 1798 checks; OLED stream, key debounce/priority, LED latch, delay units
+
+
+RESULT: PASS (host numerical verification; no Keil build or hardware timing claim)
+POWER MANUAL UPDATE (2026-10-23): main.c and project changed only to load nominal board configuration.
+Prior host tests did not execute this startup configuration; final startup was compiled with Keil.
+Current startup/config hashes: power_manual_verification.json. Algorithms and L1 driver sources unchanged.

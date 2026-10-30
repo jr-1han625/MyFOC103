@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "Hardware/power_board.h": "4b64b80473c68cab4edf5edaa321cdea3885556f17267f5efec4753b3e5e4a51",
+    "User/xy_select.h": "97f0784098242b626fd692e99b2b3ced6f9289f04c347ab948c3259486fe6d27",
+    "User/main.c": "87db85864181f05863df474c1ac827c7b62438d6aef8c3df4cd8a088c13bacd8",
+    "Project.uvprojx": "b48d11cd3320ee211cef6ee151b12334d9fc275fb61ffb1440b3e5459c83c788"
+  },
+  "phase_amp_per_count_magnitude": 0.040293040293040296,
+  "bus_volt_per_count": 0.022066869300911854,
+  "bus_amp_per_count": 0.010073260073260074,
+  "keil_errors": 0,
+  "keil_warnings": 0,
+  "runtime_adc_pwm_implemented": false
+}

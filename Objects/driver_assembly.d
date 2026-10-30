@@ -1,0 +1,8 @@
+.\objects\driver_assembly.o: User\driver_assembly.c
+.\objects\driver_assembly.o: User\driver_assembly.h
+.\objects\driver_assembly.o: .\Hardware\board.h
+.\objects\driver_assembly.o: D:\keil5.39\ARM\AC5\Bin\..\include\stdint.h
+.\objects\driver_assembly.o: .\L1_Drivers\OLED.h
+.\objects\driver_assembly.o: .\L1_Drivers\LED.h
+.\objects\driver_assembly.o: .\L1_Drivers\Key.h
+.\objects\driver_assembly.o: .\L1_Drivers\Delay.h
