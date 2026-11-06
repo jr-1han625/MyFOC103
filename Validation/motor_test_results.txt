@@ -1,0 +1,30 @@
+UTC: 2026-11-06T12:31:34.290113+00:00
+SOURCE SHA256:
+fc93dbe697eb8d947db1a68047a0f0dcd0378288b18ffc4d55b7dc285346c455  L1_Drivers/MotorIo.c
+e900f092561ad708df8f39d7ee121d07510924ea92689698ff5f56f82959d07b  L2_Middleware/algos/foc_math.c
+7564bfc906a03833cbad2ade11c1e3aee5a4c1b3b1f739a2cd32918e199df517  L2_Middleware/algos/foc_openloop.c
+23d35f7c3ed9f4608d0cd97777a620a08fc88ebe7fad6c0a84e088d399d14ec8  L2_Middleware/motor_start.c
+9d41fd8fb159fb8da8828dcf01881103bec753cd7c1fdd8b1eafa331c1028364  Validation/test_motor.c
+3e18312f1f08da834936954ad09e8dc2d2c77d5b335d1e9c735fbc41e7740f3f  Hardware/motor_board.c
+fe694e6f9231d9c756b567ed0ed2358098e338ed3e2d8f0de3f7c168ae70df9b  Hardware/motor_board.h
+602aebdd4ee248c201e2a670be6b85486077111a82183705fccadbb5f7e27b97  User/xy_select.h
+2b298789f47cf04fa418e64bf97187ae94259e1347ec7bfa84ac913542dd91c8  User/main.c
+c79bf964e3999cb221732d37d1b97b8670b045b41cbf473d3763e6a2361e519a  User/stm32f10x_it.c
+4b28f907487f23bea1e3a81cefa413ec41dcc3a5d0bd69854efc979feafb3032  User/driver_assembly.c
+0efa7057785c5b2034dd314c209290cc2af784f57ef8d8f1912b90625658c243  Project.uvprojx
+0e637f5446517e3d665fece2f547d2942292d100896aded21d073d7daab69a29  Validation/run_motor_tests.py
+BUILD: Validation\toolchain\ziglang\zig.exe cc -std=c99 -Wall -Wextra -Werror -pedantic -O0 -IL1_Drivers -IL2_Middleware -IL2_Middleware/algos -IUser -IHardware L1_Drivers/MotorIo.c L2_Middleware/algos/foc_math.c L2_Middleware/algos/foc_openloop.c L2_Middleware/motor_start.c Validation/test_motor.c -o C:\Users\RD68\Desktop\FOC-103\Validation\motor_tests.exe
+
+
+BUILD PASS: -O0
+PASS: 956667 checks; startup timing, vector reconstruction, cutoff, latch, angle lookup
+
+
+BUILD: Validation\toolchain\ziglang\zig.exe cc -std=c99 -Wall -Wextra -Werror -pedantic -O2 -IL1_Drivers -IL2_Middleware -IL2_Middleware/algos -IUser -IHardware L1_Drivers/MotorIo.c L2_Middleware/algos/foc_math.c L2_Middleware/algos/foc_openloop.c L2_Middleware/motor_start.c Validation/test_motor.c -o C:\Users\RD68\Desktop\FOC-103\Validation\motor_tests.exe
+
+
+BUILD PASS: -O2
+PASS: 956667 checks; startup timing, vector reconstruction, cutoff, latch, angle lookup
+
+
+RESULT: PASS (host numerical verification; no Keil build or hardware timing claim)

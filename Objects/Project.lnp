@@ -38,6 +38,10 @@
 ".\objects\key_1.o"
 ".\objects\delay_1.o"
 ".\objects\driver_assembly.o"
+".\objects\motor_board.o"
+".\objects\motorio.o"
+".\objects\motor_start.o"
+".\objects\foc_openloop.o"
 --strict --scatter ".\Objects\Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -2,8 +2,11 @@
 .\objects\main.o: User\driver_assembly.h
 .\objects\main.o: .\L1_Drivers\OLED.h
 .\objects\main.o: D:\keil5.39\ARM\AC5\Bin\..\include\stdint.h
-.\objects\main.o: User\foc_bench.h
-.\objects\main.o: User\foc_control.h
+.\objects\main.o: .\L1_Drivers\Delay.h
+.\objects\main.o: .\L1_Drivers\MotorIo.h
+.\objects\main.o: .\L2_Middleware\motor_start.h
 .\objects\main.o: .\L2_Middleware\algos\foc_math.h
+.\objects\main.o: .\L2_Middleware\algos\foc_openloop.h
+.\objects\main.o: User\foc_control.h
 .\objects\main.o: User\xy_select.h
 .\objects\main.o: .\Hardware\power_board.h

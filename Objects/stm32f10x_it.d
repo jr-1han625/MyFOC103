@@ -29,3 +29,8 @@
 .\objects\stm32f10x_it.o: .\Library\stm32f10x_usart.h
 .\objects\stm32f10x_it.o: .\Library\stm32f10x_wwdg.h
 .\objects\stm32f10x_it.o: .\Library\misc.h
+.\objects\stm32f10x_it.o: .\Hardware\motor_board.h
+.\objects\stm32f10x_it.o: .\L1_Drivers\MotorIo.h
+.\objects\stm32f10x_it.o: .\L2_Middleware\motor_start.h
+.\objects\stm32f10x_it.o: .\L2_Middleware\algos\foc_math.h
+.\objects\stm32f10x_it.o: .\L2_Middleware\algos\foc_openloop.h

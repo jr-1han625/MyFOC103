@@ -52,7 +52,7 @@
           <OutputName>Project</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\Hardware;.\L2_Middleware\algos;.\L1_Drivers</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\Hardware;.\L2_Middleware\algos;.\L1_Drivers;.\L2_Middleware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -707,11 +707,6 @@
               <FileType>5</FileType>
               <FilePath>.\User\foc_control.h</FilePath>
             </File>
-            <File>
-              <FileName>foc_bench.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\User\foc_bench.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -824,7 +819,52 @@
             </File>
           </Files>
         </Group>
-      </Groups>
+        <Group>
+        <GroupName>Motor Startup</GroupName>
+        <Files>
+          <File>
+            <FileName>motor_board.c</FileName>
+            <FileType>1</FileType>
+            <FilePath>.\Hardware\motor_board.c</FilePath>
+          </File>
+          <File>
+            <FileName>motor_board.h</FileName>
+            <FileType>5</FileType>
+            <FilePath>.\Hardware\motor_board.h</FilePath>
+          </File>
+          <File>
+            <FileName>MotorIo.c</FileName>
+            <FileType>1</FileType>
+            <FilePath>.\L1_Drivers\MotorIo.c</FilePath>
+          </File>
+          <File>
+            <FileName>MotorIo.h</FileName>
+            <FileType>5</FileType>
+            <FilePath>.\L1_Drivers\MotorIo.h</FilePath>
+          </File>
+          <File>
+            <FileName>motor_start.c</FileName>
+            <FileType>1</FileType>
+            <FilePath>.\L2_Middleware\motor_start.c</FilePath>
+          </File>
+          <File>
+            <FileName>motor_start.h</FileName>
+            <FileType>5</FileType>
+            <FilePath>.\L2_Middleware\motor_start.h</FilePath>
+          </File>
+          <File>
+            <FileName>foc_openloop.c</FileName>
+            <FileType>1</FileType>
+            <FilePath>.\L2_Middleware\algos\foc_openloop.c</FilePath>
+          </File>
+          <File>
+            <FileName>foc_openloop.h</FileName>
+            <FileType>5</FileType>
+            <FilePath>.\L2_Middleware\algos\foc_openloop.h</FilePath>
+          </File>
+        </Files>
+      </Group>
+    </Groups>
     </Target>
   </Targets>
 

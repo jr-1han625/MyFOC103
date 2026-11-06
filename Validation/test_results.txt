@@ -1,14 +1,13 @@
-UTC: 2026-10-23T00:49:35.645300+00:00
+UTC: 2026-11-06T12:31:34.693047+00:00
 SOURCE SHA256:
 e900f092561ad708df8f39d7ee121d07510924ea92689698ff5f56f82959d07b  L2_Middleware/algos/foc_math.c
 396269dd77c4a5125389e36245aba9f7c1c8665b6ef79205fe292e39a456daff  User/foc_control.c
 c81c6bee0a86f1a3829f3ada2ef5a3a3b90eb3c70d84ce4f76c4f0c710d02c6c  Validation/test_foc.c
 0aec4bd7d95ba6d12bdc366d964c93a8f048bb6a200ecfce58cc3a1c3b764b3b  L2_Middleware/algos/foc_math.h
-1ddca2797f453d7bd60a9859efbee30a6964fdd84109ec1feaf42182bf17f83c  User/foc_control.h
-984beb4b4751875b828b1a84ba36c939a75220e75bddc1e77e2adffb3918aeca  User/foc_bench.h
-40c4f8f4a5f4ae78feff604156a580cc677e619611c3bb1e58b963d9e24e2c2f  User/main.c
-18565994b8effa661816e50144eeb8f2e11989ab897e1332561544101d81f731  Project.uvprojx
-1fec7028c5f2d6ee70c4920815ad1caed3459b84299c373e6332b25f641ac6ee  Validation/run_tests.py
+c4e195663fa7fff18895d87c16f36976a053a5f22bd26600dfa28c2429885f31  User/foc_control.h
+2b298789f47cf04fa418e64bf97187ae94259e1347ec7bfa84ac913542dd91c8  User/main.c
+0efa7057785c5b2034dd314c209290cc2af784f57ef8d8f1912b90625658c243  Project.uvprojx
+4ad939f360972fb21c0f551c42e42971058273a258dd6069b5aea5f7c55feb42  Validation/run_tests.py
 BUILD: Validation\toolchain\ziglang\zig.exe cc -std=c99 -Wall -Wextra -Werror -pedantic -O0 -IUser -IL2_Middleware/algos L2_Middleware/algos/foc_math.c User/foc_control.c Validation/test_foc.c -o C:\Users\RD68\Desktop\FOC-103\Validation\foc_tests.exe
 
 
@@ -28,6 +27,3 @@ PASS: 61600 checks (sampling/transforms/PI/limit/SVPWM/chain/saturation/RL/rejec
 
 
 RESULT: PASS (host numerical verification; no Keil build or hardware timing claim)
-POWER MANUAL UPDATE (2026-10-23): main.c and project changed only to load nominal board configuration.
-Prior host tests did not execute this startup configuration; final startup was compiled with Keil.
-Current startup/config hashes: power_manual_verification.json. Algorithms and L1 driver sources unchanged.

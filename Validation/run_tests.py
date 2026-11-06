@@ -29,7 +29,7 @@ def main():
         directory.mkdir(parents=True, exist_ok=True)
         env[name] = str(directory)
     sources = ['L2_Middleware/algos/foc_math.c', 'User/foc_control.c', 'Validation/test_foc.c']
-    recorded = sources + ['L2_Middleware/algos/foc_math.h', 'User/foc_control.h', 'User/foc_bench.h', 'User/main.c',
+    recorded = sources + ['L2_Middleware/algos/foc_math.h', 'User/foc_control.h', 'User/main.c',
                           'Project.uvprojx', 'Validation/run_tests.py']
     report = ['UTC: ' + datetime.now(timezone.utc).isoformat(), 'SOURCE SHA256:']
     for name in recorded:

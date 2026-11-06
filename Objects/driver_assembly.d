@@ -6,3 +6,5 @@
 .\objects\driver_assembly.o: .\L1_Drivers\LED.h
 .\objects\driver_assembly.o: .\L1_Drivers\Key.h
 .\objects\driver_assembly.o: .\L1_Drivers\Delay.h
+.\objects\driver_assembly.o: .\L1_Drivers\MotorIo.h
+.\objects\driver_assembly.o: .\Hardware\motor_board.h

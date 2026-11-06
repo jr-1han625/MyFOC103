@@ -1,0 +1,10 @@
+.\objects\motor_start.o: L2_Middleware\motor_start.c
+.\objects\motor_start.o: L2_Middleware\motor_start.h
+.\objects\motor_start.o: .\L1_Drivers\MotorIo.h
+.\objects\motor_start.o: D:\keil5.39\ARM\AC5\Bin\..\include\stdint.h
+.\objects\motor_start.o: .\L2_Middleware\algos\foc_math.h
+.\objects\motor_start.o: .\L2_Middleware\algos\foc_openloop.h
+.\objects\motor_start.o: .\User\xy_select.h
+.\objects\motor_start.o: .\Hardware\power_board.h
+.\objects\motor_start.o: D:\keil5.39\ARM\AC5\Bin\..\include\string.h
+.\objects\motor_start.o: D:\keil5.39\ARM\AC5\Bin\..\include\math.h
